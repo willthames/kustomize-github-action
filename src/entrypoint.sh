@@ -40,7 +40,7 @@ function parse_inputs {
        enable_alpha_plugins="--enable_alpha_plugins"
     fi
 
-    with_token=""
+    with_token=()
     if [ "${INPUT_TOKEN}" != "" ]; then
        with_token=(-H "Authorization: token ${INPUT_TOKEN}")
     fi
